@@ -10,7 +10,7 @@ public class PostTest {
     @Test
 
     void shouldReturnSendData () {
-        var text = "228";
+        var text = "228 sfgdfse 1337";
         given()
                 .baseUri ("https://postman-echo.com")
                 .body(text)
