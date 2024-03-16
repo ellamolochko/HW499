@@ -10,7 +10,7 @@ public class PostTest {
     @Test
 
     void shouldReturnSendData () {
-        int text = 232;
+        var text = "228 sfgdfse 1337";
         given()
                 .baseUri ("https://postman-echo.com")
                 .body(text)
@@ -18,6 +18,6 @@ public class PostTest {
                 .post("/post")
                 .then()
                 .statusCode(200)
-                .body("", equalTo(text));
+                .body("data", equalTo(text));
     }
 }
